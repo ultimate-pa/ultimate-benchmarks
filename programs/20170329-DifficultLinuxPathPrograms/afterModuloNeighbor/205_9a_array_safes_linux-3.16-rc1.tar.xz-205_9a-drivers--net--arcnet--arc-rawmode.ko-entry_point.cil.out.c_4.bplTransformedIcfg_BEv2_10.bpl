@@ -1,0 +1,485 @@
+var #memory_$Pointer$.base : [int][int]int;
+
+var ~rawmode_proto_group0.offset : int;
+
+var ~#set_impl.offset : int;
+
+var ~arc_proto_default.base : int;
+
+var ~arc_proto_map.base : [int]int;
+
+var #NULL.offset : int;
+
+var ~#set_impl.base : int;
+
+var ~ldv_state_variable_0 : int;
+
+var ~ldv_retval_0 : int;
+
+var #length : [int]int;
+
+var ~LDV_SKBS.base : int;
+
+var v_rep#funAddr~rx.base_1 : int;
+
+var v_rep#funAddr~prepare_tx.offset_1 : int;
+
+var v_rep#funAddr~build_header.base_1 : int;
+
+var ~ref_cnt : int;
+
+var ~rawmode_proto_group0.base : int;
+
+var ~last_index : int;
+
+var ~#rawmode_proto.offset : int;
+
+var v_rep#funAddr~prepare_tx.base_1 : int;
+
+var ~arc_proto_map.offset : [int]int;
+
+var #NULL.base : int;
+
+var v_rep#funAddr~build_header.offset_1 : int;
+
+var ~#rawmode_proto.base : int;
+
+var ~arc_proto_default.offset : int;
+
+var ~arc_bcast_proto.offset : int;
+
+var ~ldv_state_variable_1 : int;
+
+var v_rep#funAddr~rx.offset_1 : int;
+
+var #valid : [int]int;
+
+var ~rawmode_proto_group1.base : int;
+
+var #memory_int : [int][int]int;
+
+var ~rawmode_proto_group1.offset : int;
+
+var ~arc_bcast_proto.base : int;
+
+var ~LDV_SKBS.offset : int;
+
+var #memory_$Pointer$.offset : [int][int]int;
+
+procedure ULTIMATE.start() returns ()
+modifies #memory_$Pointer$.base, ~rawmode_proto_group0.offset, ~#set_impl.offset, ~arc_proto_default.base, ~arc_proto_map.base, #NULL.offset, ~#set_impl.base, ~ldv_state_variable_0, ~ldv_retval_0, #length, ~LDV_SKBS.base, v_rep#funAddr~rx.base_1, v_rep#funAddr~prepare_tx.offset_1, v_rep#funAddr~build_header.base_1, ~ref_cnt, ~rawmode_proto_group0.base, ~last_index, ~#rawmode_proto.offset, v_rep#funAddr~prepare_tx.base_1, ~arc_proto_map.offset, #NULL.base, v_rep#funAddr~build_header.offset_1, ~#rawmode_proto.base, ~arc_proto_default.offset, ~arc_bcast_proto.offset, ~ldv_state_variable_1, v_rep#funAddr~rx.offset_1, #valid, ~rawmode_proto_group1.base, #memory_int, ~rawmode_proto_group1.offset, ~arc_bcast_proto.base, ~LDV_SKBS.offset, #memory_$Pointer$.offset;
+{
+    var main_#t~ret68.base : int;
+    var main_~tmp___2~73 : int;
+    var printk_#res : int;
+    var main_#t~nondet70 : int;
+    var main_#t~memset72.offset : int;
+    var main_~tmp~73 : int;
+    var write~int_#ptr.base : int;
+    var main_~ldvarg0~73 : int;
+    var main_#t~ret82 : int;
+    var write~int_old_#memory_$Pointer$.offset : [int][int]int;
+    var main_#t~nondet66 : int;
+    var #Ultimate.alloc_old_#length : [int]int;
+    var write~$Pointer$_#ptr.base : int;
+    var main_~#ldvarg2~73.base : int;
+    var main_#t~switch76 : bool;
+    var ldv_zalloc_~tmp~17.base : int;
+    var write~int_#sizeOfWrittenType : int;
+    var write~$Pointer$_#ptr.offset : int;
+    var arcnet_raw_init_#res : int;
+    var ldv_set_is_empty_~set.base : int;
+    var write~int_#value : int;
+    var printk_#in~0.base : int;
+    var main_#t~nondet73 : int;
+    var ldv_set_is_empty_#in~set.offset : int;
+    var #Ultimate.C_memset_#amount : int;
+    var arcnet_raw_init_#t~ret21 : int;
+    var #Ultimate.alloc_old_#valid : [int]int;
+    var main_#t~ret77 : int;
+    var ldv_set_is_empty_#in~set.base : int;
+    var ldv_set_is_empty_~set.offset : int;
+    var write~int_#ptr.offset : int;
+    var ldv_zalloc_#t~malloc18.base : int;
+    var main_~ldvarg5~73 : int;
+    var write~$Pointer$_#value.offset : int;
+    var ldv_check_final_state_~tmp___7~138 : int;
+    var main_~tmp___6~73 : int;
+    var main_#t~mem78 : int;
+    var main_~tmp___1~73.base : int;
+    var write~$Pointer$_old_#memory_$Pointer$.base : [int][int]int;
+    var main_~tmp___3~73 : int;
+    var #Ultimate.alloc_~size : int;
+    var main_#t~nondet69 : int;
+    var ldv_zalloc_#t~nondet17 : int;
+    var ldv_set_init_#in~set.offset : int;
+    var ldv_set_init_~set.base : int;
+    var main_#t~nondet80 : int;
+    var main_~tmp___0~73 : int;
+    var main_~ldvarg3~73.offset : int;
+    var #Ultimate.C_memset_#value : int;
+    var write~$Pointer$_old_#memory_$Pointer$.offset : [int][int]int;
+    var main_#res : int;
+    var #Ultimate.C_memset_#res.base : int;
+    var write~$Pointer$_#sizeOfWrittenType : int;
+    var #Ultimate.C_memset_#t~loopctr93 : int;
+    var ldv_set_init_#in~set.base : int;
+    var ldv_zalloc_~tmp___0~17 : int;
+    var main_~#ldvarg2~73.offset : int;
+    var main_~ldvarg3~73.base : int;
+    var arcnet_raw_init_#t~nondet20.base : int;
+    var arcnet_raw_init_~count~33 : int;
+    var write~$Pointer$_old_#memory_int : [int][int]int;
+    var main_~tmp___7~73 : int;
+    var #Ultimate.alloc_#res.base : int;
+    var #Ultimate.alloc_#res.offset : int;
+    var ldv_zalloc_#res.offset : int;
+    var main_~ldvarg6~73 : int;
+    var main_~tmp___1~73.offset : int;
+    var printk_#in~0.offset : int;
+    var ldv_check_final_state_#t~ret91 : int;
+    var write~int_old_#memory_int : [int][int]int;
+    var ldv_zalloc_~size : int;
+    var ldv_zalloc_#in~size : int;
+    var arcnet_raw_init_#t~nondet20.offset : int;
+    var main_#t~switch74 : bool;
+    var main_#t~nondet75 : int;
+    var ldv_set_is_empty_#res : int;
+    var main_#t~memset72.base : int;
+    var main_#t~ret79 : int;
+    var main_~tmp___5~73 : int;
+    var ldv_zalloc_#t~malloc18.offset : int;
+    var main_#t~nondet71 : int;
+    var ldv_zalloc_~p~17.offset : int;
+    var ldv_zalloc_#res.base : int;
+    var #Ultimate.C_memset_#ptr.offset : int;
+    var ldv_zalloc_~p~17.base : int;
+    var main_#t~switch81 : bool;
+    var main_~tmp___4~73 : int;
+    var main_#t~nondet67 : int;
+    var write~int_old_#memory_$Pointer$.base : [int][int]int;
+    var write~$Pointer$_#value.base : int;
+    var ldv_set_init_~set.offset : int;
+    var main_~ldvarg1~73 : int;
+    var #Ultimate.C_memset_#ptr.base : int;
+    var #Ultimate.C_memset_#res.offset : int;
+    var main_#t~ret68.offset : int;
+    var ldv_zalloc_~tmp~17.offset : int;
+    var main_~ldvarg4~73 : int;
+
+  loc0:
+    #NULL.offset, #NULL.base := 0, 0;
+    #valid := #valid[0 := 0];
+    ~ref_cnt := 0;
+    ~ldv_state_variable_1 := 0;
+    ~ldv_state_variable_0 := 0;
+    ~ldv_retval_0 := 0;
+    ~last_index := 0;
+    ~rawmode_proto_group0.base, ~rawmode_proto_group0.offset := 0, 0;
+    ~rawmode_proto_group1.base, ~rawmode_proto_group1.offset := 0, 0;
+    #Ultimate.alloc_old_#valid, #Ultimate.alloc_old_#length := #valid, #length;
+    #Ultimate.alloc_~size := 49;
+    havoc #Ultimate.alloc_#res.offset, #Ultimate.alloc_#res.base;
+    havoc #valid, #length;
+    assume #Ultimate.alloc_old_#valid[#Ultimate.alloc_#res.base] == 0;
+    assume #valid == #Ultimate.alloc_old_#valid[#Ultimate.alloc_#res.base := 1];
+    assume #Ultimate.alloc_#res.offset == 0;
+    assume !(#Ultimate.alloc_#res.base == 0);
+    assume #length == #Ultimate.alloc_old_#length[#Ultimate.alloc_#res.base := #Ultimate.alloc_~size];
+    ~#rawmode_proto.base, ~#rawmode_proto.offset := #Ultimate.alloc_#res.base, #Ultimate.alloc_#res.offset;
+    write~int_old_#memory_$Pointer$.offset, write~int_old_#memory_$Pointer$.base, write~int_old_#memory_int := #memory_$Pointer$.offset, #memory_$Pointer$.base, #memory_int;
+    write~int_#sizeOfWrittenType, write~int_#ptr.base, write~int_#value, write~int_#ptr.offset := 1, ~#rawmode_proto.base, 114, ~#rawmode_proto.offset;
+    havoc #memory_$Pointer$.base, #memory_int, #memory_$Pointer$.offset;
+    assume #memory_$Pointer$.offset == write~int_old_#memory_$Pointer$.offset[write~int_#ptr.base := write~int_old_#memory_$Pointer$.offset[write~int_#ptr.base][write~int_#ptr.offset := #memory_$Pointer$.offset[write~int_#ptr.base][write~int_#ptr.offset]]] && #memory_$Pointer$.base == write~int_old_#memory_$Pointer$.base[write~int_#ptr.base := write~int_old_#memory_$Pointer$.base[write~int_#ptr.base][write~int_#ptr.offset := #memory_$Pointer$.base[write~int_#ptr.base][write~int_#ptr.offset]]];
+    assume #memory_int == write~int_old_#memory_int[write~int_#ptr.base := write~int_old_#memory_int[write~int_#ptr.base][write~int_#ptr.offset := write~int_#value]];
+    write~int_old_#memory_$Pointer$.offset, write~int_old_#memory_$Pointer$.base, write~int_old_#memory_int := #memory_$Pointer$.offset, #memory_$Pointer$.base, #memory_int;
+    write~int_#sizeOfWrittenType, write~int_#ptr.base, write~int_#value, write~int_#ptr.offset := 4, ~#rawmode_proto.base, 508, ~#rawmode_proto.offset + 1;
+    havoc #memory_$Pointer$.base, #memory_int, #memory_$Pointer$.offset;
+    assume #memory_$Pointer$.base == write~int_old_#memory_$Pointer$.base[write~int_#ptr.base := write~int_old_#memory_$Pointer$.base[write~int_#ptr.base][write~int_#ptr.offset := #memory_$Pointer$.base[write~int_#ptr.base][write~int_#ptr.offset]]] && #memory_$Pointer$.offset == write~int_old_#memory_$Pointer$.offset[write~int_#ptr.base := write~int_old_#memory_$Pointer$.offset[write~int_#ptr.base][write~int_#ptr.offset := #memory_$Pointer$.offset[write~int_#ptr.base][write~int_#ptr.offset]]];
+    assume #memory_int == write~int_old_#memory_int[write~int_#ptr.base := write~int_old_#memory_int[write~int_#ptr.base][write~int_#ptr.offset := write~int_#value]];
+    write~int_old_#memory_$Pointer$.offset, write~int_old_#memory_$Pointer$.base, write~int_old_#memory_int := #memory_$Pointer$.offset, #memory_$Pointer$.base, #memory_int;
+    write~int_#sizeOfWrittenType, write~int_#ptr.base, write~int_#value, write~int_#ptr.offset := 4, ~#rawmode_proto.base, 0, ~#rawmode_proto.offset + 5;
+    havoc #memory_$Pointer$.base, #memory_int, #memory_$Pointer$.offset;
+    assume #memory_$Pointer$.offset == write~int_old_#memory_$Pointer$.offset[write~int_#ptr.base := write~int_old_#memory_$Pointer$.offset[write~int_#ptr.base][write~int_#ptr.offset := #memory_$Pointer$.offset[write~int_#ptr.base][write~int_#ptr.offset]]] && #memory_$Pointer$.base == write~int_old_#memory_$Pointer$.base[write~int_#ptr.base := write~int_old_#memory_$Pointer$.base[write~int_#ptr.base][write~int_#ptr.offset := #memory_$Pointer$.base[write~int_#ptr.base][write~int_#ptr.offset]]];
+    assume #memory_int == write~int_old_#memory_int[write~int_#ptr.base := write~int_old_#memory_int[write~int_#ptr.base][write~int_#ptr.offset := write~int_#value]];
+    write~$Pointer$_old_#memory_$Pointer$.base, write~$Pointer$_old_#memory_$Pointer$.offset, write~$Pointer$_old_#memory_int := #memory_$Pointer$.base, #memory_$Pointer$.offset, #memory_int;
+    write~$Pointer$_#value.base, write~$Pointer$_#ptr.offset, write~$Pointer$_#sizeOfWrittenType, write~$Pointer$_#value.offset, write~$Pointer$_#ptr.base := v_rep#funAddr~rx.base_1, ~#rawmode_proto.offset + 9, 8, v_rep#funAddr~rx.offset_1, ~#rawmode_proto.base;
+    havoc #memory_$Pointer$.base, #memory_int, #memory_$Pointer$.offset;
+    assume #memory_$Pointer$.offset == write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.offset]] && #memory_$Pointer$.base == write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.base]];
+    assume #memory_int == write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := #memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset]]];
+    write~$Pointer$_old_#memory_$Pointer$.base, write~$Pointer$_old_#memory_$Pointer$.offset, write~$Pointer$_old_#memory_int := #memory_$Pointer$.base, #memory_$Pointer$.offset, #memory_int;
+    write~$Pointer$_#value.base, write~$Pointer$_#ptr.offset, write~$Pointer$_#sizeOfWrittenType, write~$Pointer$_#value.offset, write~$Pointer$_#ptr.base := v_rep#funAddr~build_header.base_1, ~#rawmode_proto.offset + 17, 8, v_rep#funAddr~build_header.offset_1, ~#rawmode_proto.base;
+    havoc #memory_$Pointer$.base, #memory_int, #memory_$Pointer$.offset;
+    assume #memory_$Pointer$.base == write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.base]] && #memory_$Pointer$.offset == write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.offset]];
+    assume #memory_int == write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := #memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset]]];
+    write~$Pointer$_old_#memory_$Pointer$.base, write~$Pointer$_old_#memory_$Pointer$.offset, write~$Pointer$_old_#memory_int := #memory_$Pointer$.base, #memory_$Pointer$.offset, #memory_int;
+    write~$Pointer$_#value.base, write~$Pointer$_#ptr.offset, write~$Pointer$_#sizeOfWrittenType, write~$Pointer$_#value.offset, write~$Pointer$_#ptr.base := v_rep#funAddr~prepare_tx.base_1, ~#rawmode_proto.offset + 25, 8, v_rep#funAddr~prepare_tx.offset_1, ~#rawmode_proto.base;
+    havoc #memory_$Pointer$.base, #memory_int, #memory_$Pointer$.offset;
+    assume #memory_$Pointer$.base == write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.base]] && #memory_$Pointer$.offset == write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.offset]];
+    assume #memory_int == write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := #memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset]]];
+    write~$Pointer$_old_#memory_$Pointer$.base, write~$Pointer$_old_#memory_$Pointer$.offset, write~$Pointer$_old_#memory_int := #memory_$Pointer$.base, #memory_$Pointer$.offset, #memory_int;
+    write~$Pointer$_#value.base, write~$Pointer$_#ptr.offset, write~$Pointer$_#sizeOfWrittenType, write~$Pointer$_#value.offset, write~$Pointer$_#ptr.base := 0, ~#rawmode_proto.offset + 33, 8, 0, ~#rawmode_proto.base;
+    havoc #memory_$Pointer$.base, #memory_int, #memory_$Pointer$.offset;
+    assume #memory_$Pointer$.base == write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.base]] && #memory_$Pointer$.offset == write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.offset]];
+    assume #memory_int == write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := #memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset]]];
+    write~$Pointer$_old_#memory_$Pointer$.base, write~$Pointer$_old_#memory_$Pointer$.offset, write~$Pointer$_old_#memory_int := #memory_$Pointer$.base, #memory_$Pointer$.offset, #memory_int;
+    write~$Pointer$_#value.base, write~$Pointer$_#ptr.offset, write~$Pointer$_#sizeOfWrittenType, write~$Pointer$_#value.offset, write~$Pointer$_#ptr.base := 0, ~#rawmode_proto.offset + 41, 8, 0, ~#rawmode_proto.base;
+    havoc #memory_$Pointer$.base, #memory_int, #memory_$Pointer$.offset;
+    assume #memory_$Pointer$.base == write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.base]] && #memory_$Pointer$.offset == write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.offset]];
+    assume #memory_int == write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := #memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset]]];
+    #Ultimate.alloc_old_#valid, #Ultimate.alloc_old_#length := #valid, #length;
+    #Ultimate.alloc_~size := 120;
+    havoc #Ultimate.alloc_#res.offset, #Ultimate.alloc_#res.base;
+    havoc #valid, #length;
+    assume #Ultimate.alloc_old_#valid[#Ultimate.alloc_#res.base] == 0;
+    assume #valid == #Ultimate.alloc_old_#valid[#Ultimate.alloc_#res.base := 1];
+    assume #Ultimate.alloc_#res.offset == 0;
+    assume !(#Ultimate.alloc_#res.base == 0);
+    assume #length == #Ultimate.alloc_old_#length[#Ultimate.alloc_#res.base := #Ultimate.alloc_~size];
+    ~#set_impl.base, ~#set_impl.offset := #Ultimate.alloc_#res.base, #Ultimate.alloc_#res.offset;
+    write~$Pointer$_old_#memory_$Pointer$.base, write~$Pointer$_old_#memory_$Pointer$.offset, write~$Pointer$_old_#memory_int := #memory_$Pointer$.base, #memory_$Pointer$.offset, #memory_int;
+    write~$Pointer$_#value.base, write~$Pointer$_#ptr.offset, write~$Pointer$_#sizeOfWrittenType, write~$Pointer$_#value.offset, write~$Pointer$_#ptr.base := 0, ~#set_impl.offset, 8, 0, ~#set_impl.base;
+    havoc #memory_$Pointer$.base, #memory_int, #memory_$Pointer$.offset;
+    assume #memory_$Pointer$.offset == write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.offset]] && #memory_$Pointer$.base == write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.base]];
+    assume #memory_int == write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := #memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset]]];
+    write~$Pointer$_old_#memory_$Pointer$.base, write~$Pointer$_old_#memory_$Pointer$.offset, write~$Pointer$_old_#memory_int := #memory_$Pointer$.base, #memory_$Pointer$.offset, #memory_int;
+    write~$Pointer$_#value.base, write~$Pointer$_#ptr.offset, write~$Pointer$_#sizeOfWrittenType, write~$Pointer$_#value.offset, write~$Pointer$_#ptr.base := 0, ~#set_impl.offset + 8, 8, 0, ~#set_impl.base;
+    havoc #memory_$Pointer$.base, #memory_int, #memory_$Pointer$.offset;
+    assume #memory_$Pointer$.base == write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.base]] && #memory_$Pointer$.offset == write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.offset]];
+    assume #memory_int == write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := #memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset]]];
+    write~$Pointer$_old_#memory_$Pointer$.base, write~$Pointer$_old_#memory_$Pointer$.offset, write~$Pointer$_old_#memory_int := #memory_$Pointer$.base, #memory_$Pointer$.offset, #memory_int;
+    write~$Pointer$_#value.base, write~$Pointer$_#ptr.offset, write~$Pointer$_#sizeOfWrittenType, write~$Pointer$_#value.offset, write~$Pointer$_#ptr.base := 0, ~#set_impl.offset + 16, 8, 0, ~#set_impl.base;
+    havoc #memory_$Pointer$.base, #memory_int, #memory_$Pointer$.offset;
+    assume #memory_$Pointer$.base == write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.base]] && #memory_$Pointer$.offset == write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.offset]];
+    assume #memory_int == write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := #memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset]]];
+    write~$Pointer$_old_#memory_$Pointer$.base, write~$Pointer$_old_#memory_$Pointer$.offset, write~$Pointer$_old_#memory_int := #memory_$Pointer$.base, #memory_$Pointer$.offset, #memory_int;
+    write~$Pointer$_#value.base, write~$Pointer$_#ptr.offset, write~$Pointer$_#sizeOfWrittenType, write~$Pointer$_#value.offset, write~$Pointer$_#ptr.base := 0, ~#set_impl.offset + 24, 8, 0, ~#set_impl.base;
+    havoc #memory_$Pointer$.base, #memory_int, #memory_$Pointer$.offset;
+    assume #memory_$Pointer$.offset == write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.offset]] && #memory_$Pointer$.base == write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.base]];
+    assume #memory_int == write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := #memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset]]];
+    write~$Pointer$_old_#memory_$Pointer$.base, write~$Pointer$_old_#memory_$Pointer$.offset, write~$Pointer$_old_#memory_int := #memory_$Pointer$.base, #memory_$Pointer$.offset, #memory_int;
+    write~$Pointer$_#value.base, write~$Pointer$_#ptr.offset, write~$Pointer$_#sizeOfWrittenType, write~$Pointer$_#value.offset, write~$Pointer$_#ptr.base := 0, ~#set_impl.offset + 32, 8, 0, ~#set_impl.base;
+    havoc #memory_$Pointer$.base, #memory_int, #memory_$Pointer$.offset;
+    assume #memory_$Pointer$.offset == write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.offset]] && #memory_$Pointer$.base == write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.base]];
+    assume #memory_int == write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := #memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset]]];
+    write~$Pointer$_old_#memory_$Pointer$.base, write~$Pointer$_old_#memory_$Pointer$.offset, write~$Pointer$_old_#memory_int := #memory_$Pointer$.base, #memory_$Pointer$.offset, #memory_int;
+    write~$Pointer$_#value.base, write~$Pointer$_#ptr.offset, write~$Pointer$_#sizeOfWrittenType, write~$Pointer$_#value.offset, write~$Pointer$_#ptr.base := 0, ~#set_impl.offset + 40, 8, 0, ~#set_impl.base;
+    havoc #memory_$Pointer$.base, #memory_int, #memory_$Pointer$.offset;
+    assume #memory_$Pointer$.base == write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.base]] && #memory_$Pointer$.offset == write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.offset]];
+    assume #memory_int == write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := #memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset]]];
+    write~$Pointer$_old_#memory_$Pointer$.base, write~$Pointer$_old_#memory_$Pointer$.offset, write~$Pointer$_old_#memory_int := #memory_$Pointer$.base, #memory_$Pointer$.offset, #memory_int;
+    write~$Pointer$_#value.base, write~$Pointer$_#ptr.offset, write~$Pointer$_#sizeOfWrittenType, write~$Pointer$_#value.offset, write~$Pointer$_#ptr.base := 0, ~#set_impl.offset + 48, 8, 0, ~#set_impl.base;
+    havoc #memory_$Pointer$.base, #memory_int, #memory_$Pointer$.offset;
+    assume #memory_$Pointer$.base == write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.base]] && #memory_$Pointer$.offset == write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.offset]];
+    assume #memory_int == write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := #memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset]]];
+    write~$Pointer$_old_#memory_$Pointer$.base, write~$Pointer$_old_#memory_$Pointer$.offset, write~$Pointer$_old_#memory_int := #memory_$Pointer$.base, #memory_$Pointer$.offset, #memory_int;
+    write~$Pointer$_#value.base, write~$Pointer$_#ptr.offset, write~$Pointer$_#sizeOfWrittenType, write~$Pointer$_#value.offset, write~$Pointer$_#ptr.base := 0, ~#set_impl.offset + 56, 8, 0, ~#set_impl.base;
+    havoc #memory_$Pointer$.base, #memory_int, #memory_$Pointer$.offset;
+    assume #memory_$Pointer$.offset == write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.offset]] && #memory_$Pointer$.base == write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.base]];
+    assume #memory_int == write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := #memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset]]];
+    write~$Pointer$_old_#memory_$Pointer$.base, write~$Pointer$_old_#memory_$Pointer$.offset, write~$Pointer$_old_#memory_int := #memory_$Pointer$.base, #memory_$Pointer$.offset, #memory_int;
+    write~$Pointer$_#value.base, write~$Pointer$_#ptr.offset, write~$Pointer$_#sizeOfWrittenType, write~$Pointer$_#value.offset, write~$Pointer$_#ptr.base := 0, ~#set_impl.offset + 64, 8, 0, ~#set_impl.base;
+    havoc #memory_$Pointer$.base, #memory_int, #memory_$Pointer$.offset;
+    assume #memory_$Pointer$.offset == write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.offset]] && #memory_$Pointer$.base == write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.base]];
+    assume #memory_int == write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := #memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset]]];
+    write~$Pointer$_old_#memory_$Pointer$.base, write~$Pointer$_old_#memory_$Pointer$.offset, write~$Pointer$_old_#memory_int := #memory_$Pointer$.base, #memory_$Pointer$.offset, #memory_int;
+    write~$Pointer$_#value.base, write~$Pointer$_#ptr.offset, write~$Pointer$_#sizeOfWrittenType, write~$Pointer$_#value.offset, write~$Pointer$_#ptr.base := 0, ~#set_impl.offset + 72, 8, 0, ~#set_impl.base;
+    havoc #memory_$Pointer$.base, #memory_int, #memory_$Pointer$.offset;
+    assume #memory_$Pointer$.offset == write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.offset]] && #memory_$Pointer$.base == write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.base]];
+    assume #memory_int == write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := #memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset]]];
+    write~$Pointer$_old_#memory_$Pointer$.base, write~$Pointer$_old_#memory_$Pointer$.offset, write~$Pointer$_old_#memory_int := #memory_$Pointer$.base, #memory_$Pointer$.offset, #memory_int;
+    write~$Pointer$_#value.base, write~$Pointer$_#ptr.offset, write~$Pointer$_#sizeOfWrittenType, write~$Pointer$_#value.offset, write~$Pointer$_#ptr.base := 0, ~#set_impl.offset + 80, 8, 0, ~#set_impl.base;
+    havoc #memory_$Pointer$.base, #memory_int, #memory_$Pointer$.offset;
+    assume #memory_$Pointer$.base == write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.base]] && #memory_$Pointer$.offset == write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.offset]];
+    assume #memory_int == write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := #memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset]]];
+    write~$Pointer$_old_#memory_$Pointer$.base, write~$Pointer$_old_#memory_$Pointer$.offset, write~$Pointer$_old_#memory_int := #memory_$Pointer$.base, #memory_$Pointer$.offset, #memory_int;
+    write~$Pointer$_#value.base, write~$Pointer$_#ptr.offset, write~$Pointer$_#sizeOfWrittenType, write~$Pointer$_#value.offset, write~$Pointer$_#ptr.base := 0, ~#set_impl.offset + 88, 8, 0, ~#set_impl.base;
+    havoc #memory_$Pointer$.base, #memory_int, #memory_$Pointer$.offset;
+    assume #memory_$Pointer$.offset == write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.offset]] && #memory_$Pointer$.base == write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.base]];
+    assume #memory_int == write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := #memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset]]];
+    write~$Pointer$_old_#memory_$Pointer$.base, write~$Pointer$_old_#memory_$Pointer$.offset, write~$Pointer$_old_#memory_int := #memory_$Pointer$.base, #memory_$Pointer$.offset, #memory_int;
+    write~$Pointer$_#value.base, write~$Pointer$_#ptr.offset, write~$Pointer$_#sizeOfWrittenType, write~$Pointer$_#value.offset, write~$Pointer$_#ptr.base := 0, ~#set_impl.offset + 96, 8, 0, ~#set_impl.base;
+    havoc #memory_$Pointer$.base, #memory_int, #memory_$Pointer$.offset;
+    assume #memory_$Pointer$.offset == write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.offset]] && #memory_$Pointer$.base == write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.base]];
+    assume #memory_int == write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := #memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset]]];
+    write~$Pointer$_old_#memory_$Pointer$.base, write~$Pointer$_old_#memory_$Pointer$.offset, write~$Pointer$_old_#memory_int := #memory_$Pointer$.base, #memory_$Pointer$.offset, #memory_int;
+    write~$Pointer$_#value.base, write~$Pointer$_#ptr.offset, write~$Pointer$_#sizeOfWrittenType, write~$Pointer$_#value.offset, write~$Pointer$_#ptr.base := 0, ~#set_impl.offset + 104, 8, 0, ~#set_impl.base;
+    havoc #memory_$Pointer$.base, #memory_int, #memory_$Pointer$.offset;
+    assume #memory_$Pointer$.base == write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.base]] && #memory_$Pointer$.offset == write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.offset]];
+    assume #memory_int == write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := #memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset]]];
+    write~$Pointer$_old_#memory_$Pointer$.base, write~$Pointer$_old_#memory_$Pointer$.offset, write~$Pointer$_old_#memory_int := #memory_$Pointer$.base, #memory_$Pointer$.offset, #memory_int;
+    write~$Pointer$_#value.base, write~$Pointer$_#ptr.offset, write~$Pointer$_#sizeOfWrittenType, write~$Pointer$_#value.offset, write~$Pointer$_#ptr.base := 0, ~#set_impl.offset + 112, 8, 0, ~#set_impl.base;
+    havoc #memory_$Pointer$.base, #memory_int, #memory_$Pointer$.offset;
+    assume #memory_$Pointer$.offset == write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.offset[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.offset]] && #memory_$Pointer$.base == write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_$Pointer$.base[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := write~$Pointer$_#value.base]];
+    assume #memory_int == write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base := write~$Pointer$_old_#memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset := #memory_int[write~$Pointer$_#ptr.base][write~$Pointer$_#ptr.offset]]];
+    ~LDV_SKBS.base, ~LDV_SKBS.offset := 0, 0;
+    havoc main_#res;
+    havoc main_#t~nondet75, main_#t~nondet73, main_#t~memset72.base, main_#t~ret68.base, main_#t~ret77, main_~tmp___2~73, main_#t~ret79, main_~tmp___5~73, main_#t~nondet71, main_#t~nondet70, main_#t~memset72.offset, main_~tmp~73, main_~#ldvarg2~73.offset, main_~ldvarg3~73.base, main_~ldvarg5~73, main_#t~switch81, main_~tmp___7~73, main_~tmp___4~73, main_~tmp___6~73, main_#t~mem78, main_~tmp___1~73.base, main_~ldvarg0~73, main_#t~ret82, main_~tmp___3~73, main_#t~nondet69, main_#t~nondet67, main_~ldvarg6~73, main_#t~nondet66, main_~tmp___1~73.offset, main_#t~nondet80, main_~tmp___0~73, main_~#ldvarg2~73.base, main_#t~switch76, main_~ldvarg3~73.offset, main_~ldvarg1~73, main_#t~ret68.offset, main_#t~switch74, main_~ldvarg4~73;
+    havoc main_~ldvarg1~73;
+    havoc main_~tmp~73;
+    havoc main_~ldvarg4~73;
+    havoc main_~tmp___0~73;
+    havoc main_~ldvarg3~73.offset, main_~ldvarg3~73.base;
+    havoc main_~tmp___1~73.base, main_~tmp___1~73.offset;
+    havoc main_~ldvarg0~73;
+    havoc main_~tmp___2~73;
+    havoc main_~ldvarg5~73;
+    havoc main_~tmp___3~73;
+    #Ultimate.alloc_old_#valid, #Ultimate.alloc_old_#length := #valid, #length;
+    #Ultimate.alloc_~size := 1;
+    havoc #Ultimate.alloc_#res.offset, #Ultimate.alloc_#res.base;
+    havoc #valid, #length;
+    assume #Ultimate.alloc_old_#valid[#Ultimate.alloc_#res.base] == 0;
+    assume #valid == #Ultimate.alloc_old_#valid[#Ultimate.alloc_#res.base := 1];
+    assume #Ultimate.alloc_#res.offset == 0;
+    assume !(#Ultimate.alloc_#res.base == 0);
+    assume #length == #Ultimate.alloc_old_#length[#Ultimate.alloc_#res.base := #Ultimate.alloc_~size];
+    main_~#ldvarg2~73.offset, main_~#ldvarg2~73.base := #Ultimate.alloc_#res.offset, #Ultimate.alloc_#res.base;
+    havoc main_~ldvarg6~73;
+    havoc main_~tmp___4~73;
+    havoc main_~tmp___5~73;
+    havoc main_~tmp___6~73;
+    havoc main_~tmp___7~73;
+    assume main_#t~nondet66 <= 2147483647 && 0 <= main_#t~nondet66 + 2147483648;
+    main_~tmp~73 := main_#t~nondet66;
+    havoc main_#t~nondet66;
+    main_~ldvarg1~73 := main_~tmp~73;
+    main_~tmp___0~73 := main_#t~nondet67;
+    havoc main_#t~nondet67;
+    main_~ldvarg4~73 := main_~tmp___0~73;
+    ldv_zalloc_#in~size := 232;
+    havoc ldv_zalloc_#res.offset, ldv_zalloc_#res.base;
+    havoc ldv_zalloc_~tmp~17.base, ldv_zalloc_~p~17.base, ldv_zalloc_#t~malloc18.base, ldv_zalloc_~size, ldv_zalloc_~tmp~17.offset, ldv_zalloc_#t~nondet17, ldv_zalloc_#t~malloc18.offset, ldv_zalloc_~tmp___0~17, ldv_zalloc_~p~17.offset;
+    ldv_zalloc_~size := ldv_zalloc_#in~size;
+    havoc ldv_zalloc_~p~17.base, ldv_zalloc_~p~17.offset;
+    havoc ldv_zalloc_~tmp~17.base, ldv_zalloc_~tmp~17.offset;
+    havoc ldv_zalloc_~tmp___0~17;
+    assume ldv_zalloc_#t~nondet17 <= 2147483647 && 0 <= ldv_zalloc_#t~nondet17 + 2147483648;
+    ldv_zalloc_~tmp___0~17 := ldv_zalloc_#t~nondet17;
+    havoc ldv_zalloc_#t~nondet17;
+    assume !(ldv_zalloc_~tmp___0~17 == 0);
+    ldv_zalloc_#res.offset, ldv_zalloc_#res.base := 0, 0;
+    main_#t~ret68.base, main_#t~ret68.offset := ldv_zalloc_#res.base, ldv_zalloc_#res.offset;
+    main_~tmp___1~73.base, main_~tmp___1~73.offset := main_#t~ret68.base, main_#t~ret68.offset;
+    havoc main_#t~ret68.base, main_#t~ret68.offset;
+    main_~ldvarg3~73.offset, main_~ldvarg3~73.base := main_~tmp___1~73.offset, main_~tmp___1~73.base;
+    assume 0 <= main_#t~nondet69 + 2147483648 && main_#t~nondet69 <= 2147483647;
+    main_~tmp___2~73 := main_#t~nondet69;
+    havoc main_#t~nondet69;
+    main_~ldvarg0~73 := main_~tmp___2~73;
+    assume 0 <= main_#t~nondet70 + 2147483648 && main_#t~nondet70 <= 2147483647;
+    main_~tmp___3~73 := main_#t~nondet70;
+    havoc main_#t~nondet70;
+    main_~ldvarg5~73 := main_~tmp___3~73;
+    assume 0 <= main_#t~nondet71 + 2147483648 && main_#t~nondet71 <= 2147483647;
+    main_~tmp___4~73 := main_#t~nondet71;
+    havoc main_#t~nondet71;
+    main_~ldvarg6~73 := main_~tmp___4~73;
+    ldv_set_init_#in~set.base, ldv_set_init_#in~set.offset := ~LDV_SKBS.base, ~LDV_SKBS.offset;
+    havoc ldv_set_init_~set.offset, ldv_set_init_~set.base;
+    ldv_set_init_~set.offset, ldv_set_init_~set.base := ldv_set_init_#in~set.offset, ldv_set_init_#in~set.base;
+    ldv_set_init_~set.offset, ldv_set_init_~set.base := ~#set_impl.offset, ~#set_impl.base;
+    ~last_index := 0;
+    #Ultimate.C_memset_#ptr.offset, #Ultimate.C_memset_#value, #Ultimate.C_memset_#amount, #Ultimate.C_memset_#ptr.base := main_~#ldvarg2~73.offset, 0, 1, main_~#ldvarg2~73.base;
+    havoc #Ultimate.C_memset_#res.base, #Ultimate.C_memset_#res.offset;
+    havoc #Ultimate.C_memset_#t~loopctr93;
+    #Ultimate.C_memset_#t~loopctr93 := 0;
+    goto loc1;
+  loc1:
+    goto loc1_0, loc1_1;
+  loc1_0:
+    assume #Ultimate.C_memset_#t~loopctr93 < #Ultimate.C_memset_#amount;
+    assume 0 <= #Ultimate.C_memset_#value && #Ultimate.C_memset_#value < 256;
+    #memory_$Pointer$.base, #memory_$Pointer$.offset := #memory_$Pointer$.base[#Ultimate.C_memset_#ptr.base := #memory_$Pointer$.base[#Ultimate.C_memset_#ptr.base][#Ultimate.C_memset_#t~loopctr93 + #Ultimate.C_memset_#ptr.offset := 0]], #memory_$Pointer$.offset[#Ultimate.C_memset_#ptr.base := #memory_$Pointer$.offset[#Ultimate.C_memset_#ptr.base][#Ultimate.C_memset_#t~loopctr93 + #Ultimate.C_memset_#ptr.offset := #Ultimate.C_memset_#value]];
+    #memory_int := #memory_int[#Ultimate.C_memset_#ptr.base := #memory_int[#Ultimate.C_memset_#ptr.base][#Ultimate.C_memset_#t~loopctr93 + #Ultimate.C_memset_#ptr.offset := #Ultimate.C_memset_#value]];
+    #Ultimate.C_memset_#t~loopctr93 := #Ultimate.C_memset_#t~loopctr93 + 1;
+    goto loc1;
+  loc1_1:
+    assume !(#Ultimate.C_memset_#t~loopctr93 < #Ultimate.C_memset_#amount);
+    assume #Ultimate.C_memset_#res.base == #Ultimate.C_memset_#ptr.base && #Ultimate.C_memset_#res.offset == #Ultimate.C_memset_#ptr.offset;
+    assume #Ultimate.C_memset_#res.base == #Ultimate.C_memset_#ptr.base && #Ultimate.C_memset_#res.offset == #Ultimate.C_memset_#ptr.offset;
+    main_#t~memset72.base, main_#t~memset72.offset := #Ultimate.C_memset_#res.base, #Ultimate.C_memset_#res.offset;
+    havoc main_#t~memset72.base, main_#t~memset72.offset;
+    ~ldv_state_variable_1 := 0;
+    ~ref_cnt := 0;
+    ~ldv_state_variable_0 := 1;
+    assume 0 <= main_#t~nondet73 + 2147483648 && main_#t~nondet73 <= 2147483647;
+    main_~tmp___5~73 := main_#t~nondet73;
+    havoc main_#t~nondet73;
+    assume !(main_~tmp___5~73 == 0);
+    main_#t~switch74 := false;
+    assume !main_#t~switch74;
+    assume main_~tmp___5~73 == 1;
+    main_#t~switch74 := true;
+    assume main_#t~switch74;
+    assume !(~ldv_state_variable_0 == 0);
+    assume 0 <= main_#t~nondet80 + 2147483648 && main_#t~nondet80 <= 2147483647;
+    main_~tmp___7~73 := main_#t~nondet80;
+    havoc main_#t~nondet80;
+    assume !(main_~tmp___7~73 == 0);
+    main_#t~switch81 := false;
+    assume !main_#t~switch81;
+    assume main_~tmp___7~73 == 1;
+    main_#t~switch81 := true;
+    assume main_#t~switch81;
+    assume ~ldv_state_variable_0 == 1;
+    havoc arcnet_raw_init_#res;
+    havoc arcnet_raw_init_#t~nondet20.base, arcnet_raw_init_~count~33, arcnet_raw_init_#t~ret21, arcnet_raw_init_#t~nondet20.offset;
+    havoc arcnet_raw_init_~count~33;
+    #Ultimate.alloc_old_#valid, #Ultimate.alloc_old_#length := #valid, #length;
+    #Ultimate.alloc_~size := 56;
+    havoc #Ultimate.alloc_#res.offset, #Ultimate.alloc_#res.base;
+    havoc #valid, #length;
+    assume #Ultimate.alloc_old_#valid[#Ultimate.alloc_#res.base] == 0;
+    assume #valid == #Ultimate.alloc_old_#valid[#Ultimate.alloc_#res.base := 1];
+    assume #Ultimate.alloc_#res.offset == 0;
+    assume !(#Ultimate.alloc_#res.base == 0);
+    assume #length == #Ultimate.alloc_old_#length[#Ultimate.alloc_#res.base := #Ultimate.alloc_~size];
+    arcnet_raw_init_#t~nondet20.base, arcnet_raw_init_#t~nondet20.offset := #Ultimate.alloc_#res.base, #Ultimate.alloc_#res.offset;
+    printk_#in~0.offset, printk_#in~0.base := arcnet_raw_init_#t~nondet20.offset, arcnet_raw_init_#t~nondet20.base;
+    havoc printk_#res;
+    arcnet_raw_init_#t~ret21 := printk_#res;
+    assume 0 <= arcnet_raw_init_#t~ret21 + 2147483648 && arcnet_raw_init_#t~ret21 <= 2147483647;
+    havoc arcnet_raw_init_#t~nondet20.base, arcnet_raw_init_#t~nondet20.offset;
+    havoc arcnet_raw_init_#t~ret21;
+    arcnet_raw_init_~count~33 := 0;
+    goto loc2;
+  loc2:
+    goto loc2_0, loc2_1;
+  loc2_0:
+    assume !(arcnet_raw_init_~count~33 <= 255);
+    assume (~arc_bcast_proto.offset + ~arc_bcast_proto.base < 18446744073709551616 && 0 <= ~arc_bcast_proto.offset + ~arc_bcast_proto.base) && ~arc_bcast_proto.offset + ~arc_bcast_proto.base == ~arc_proto_default.base + ~arc_proto_default.offset;
+    ~arc_bcast_proto.offset, ~arc_bcast_proto.base := ~#rawmode_proto.offset, ~#rawmode_proto.base;
+    ~arc_proto_default.offset, ~arc_proto_default.base := ~#rawmode_proto.offset, ~#rawmode_proto.base;
+    arcnet_raw_init_#res := 0;
+    main_#t~ret82 := arcnet_raw_init_#res;
+    assume 0 <= main_#t~ret82 + 2147483648 && main_#t~ret82 <= 2147483647;
+    ~ldv_retval_0 := main_#t~ret82;
+    havoc main_#t~ret82;
+    assume !(~ldv_retval_0 == 0);
+    assume !(~ldv_retval_0 == 0);
+    ~ldv_state_variable_0 := 2;
+    havoc ldv_check_final_state_#t~ret91, ldv_check_final_state_~tmp___7~138;
+    havoc ldv_check_final_state_~tmp___7~138;
+    ldv_set_is_empty_#in~set.offset, ldv_set_is_empty_#in~set.base := ~LDV_SKBS.offset, ~LDV_SKBS.base;
+    havoc ldv_set_is_empty_#res;
+    havoc ldv_set_is_empty_~set.base, ldv_set_is_empty_~set.offset;
+    ldv_set_is_empty_~set.base, ldv_set_is_empty_~set.offset := ldv_set_is_empty_#in~set.base, ldv_set_is_empty_#in~set.offset;
+    assume ~last_index == 0;
+    ldv_set_is_empty_#res := 1;
+    ldv_check_final_state_#t~ret91 := ldv_set_is_empty_#res;
+    assume ldv_check_final_state_#t~ret91 <= 2147483647 && 0 <= ldv_check_final_state_#t~ret91 + 2147483648;
+    ldv_check_final_state_~tmp___7~138 := ldv_check_final_state_#t~ret91;
+    havoc ldv_check_final_state_#t~ret91;
+    assume ldv_check_final_state_~tmp___7~138 == 0;
+    goto loc3;
+  loc2_1:
+    assume arcnet_raw_init_~count~33 <= 255;
+    assume (((~arc_proto_map.base[arcnet_raw_init_~count~33] + ~arc_proto_map.offset[arcnet_raw_init_~count~33]) % 18446744073709551616 == ~arc_proto_default.base + ~arc_proto_default.offset && 18446744073709551616 + 18446744073709551616 <= ~arc_proto_map.base[arcnet_raw_init_~count~33] + ~arc_proto_map.offset[arcnet_raw_init_~count~33]) && ~arc_proto_default.base + ~arc_proto_default.offset < 18446744073709551616) && 0 <= ~arc_proto_default.base + ~arc_proto_default.offset;
+    ~arc_proto_map.base, ~arc_proto_map.offset := ~arc_proto_map.base[arcnet_raw_init_~count~33 := ~#rawmode_proto.base], ~arc_proto_map.offset[arcnet_raw_init_~count~33 := ~#rawmode_proto.offset];
+    arcnet_raw_init_~count~33 := arcnet_raw_init_~count~33 + 1;
+    goto loc2;
+  loc3:
+    assert false;
+}
+
