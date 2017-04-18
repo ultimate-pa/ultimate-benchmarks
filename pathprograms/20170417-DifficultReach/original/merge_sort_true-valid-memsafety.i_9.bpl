@@ -1,0 +1,194 @@
+type ~size_t = int;
+var #NULL.base : int, #NULL.offset : int;
+
+var #valid : [int]int;
+
+var #length : [int]int;
+
+var #memory_int : [int,int]int;
+
+var #memory_$Pointer$.base : [int,int]int, #memory_$Pointer$.offset : [int,int]int;
+
+implementation fail() returns (){
+  loc0:
+    assume !false;
+    goto loc1;
+  loc1:
+    assert false;
+}
+
+procedure fail() returns ();
+modifies ;
+
+implementation ULTIMATE.init() returns (){
+  loc2:
+    #NULL.base, #NULL.offset := 0, 0;
+    #valid := #valid[0 := 0];
+    assume true;
+    return;
+}
+
+procedure ULTIMATE.init() returns ();
+modifies #valid, #NULL.base, #NULL.offset;
+modifies ;
+
+implementation inspect_before(#in~shape.base : int, #in~shape.offset : int) returns (){
+    var #t~mem25.base : int, #t~mem25.offset : int;
+    var #t~mem26.base : int, #t~mem26.offset : int;
+    var #t~mem27.base : int, #t~mem27.offset : int;
+    var #t~mem28.base : int, #t~mem28.offset : int;
+    var #t~mem24.base : int, #t~mem24.offset : int;
+    var #t~mem29.base : int, #t~mem29.offset : int;
+    var #t~mem30.base : int, #t~mem30.offset : int;
+    var #t~mem31.base : int, #t~mem31.offset : int;
+    var #t~mem32.base : int, #t~mem32.offset : int;
+    var #t~mem33.base : int, #t~mem33.offset : int;
+    var ~shape.base : int, ~shape.offset : int;
+
+  loc3:
+    ~shape.base, ~shape.offset := #in~shape.base, #in~shape.offset;
+    assume true;
+    assume !(~shape.base == 0 && ~shape.offset == 0);
+    assume true;
+    assume true;
+    call #t~mem29.base, #t~mem29.offset := read~$Pointer$(~shape.base, ~shape.offset + 8, 8);
+    assume !!(#t~mem29.base != 0 || #t~mem29.offset != 0);
+    havoc #t~mem29.base, #t~mem29.offset;
+    assume true;
+    assume !(~shape.base == 0 && ~shape.offset == 0);
+    assume true;
+    assume true;
+    call #t~mem25.base, #t~mem25.offset := read~$Pointer$(~shape.base, ~shape.offset + 8, 8);
+    assume !(#t~mem25.base == 0 && #t~mem25.offset == 0);
+    havoc #t~mem25.base, #t~mem25.offset;
+    assume true;
+    assume true;
+    call #t~mem26.base, #t~mem26.offset := read~$Pointer$(~shape.base, ~shape.offset + 0, 8);
+    assume !(#t~mem26.base == 0 && #t~mem26.offset == 0);
+    havoc #t~mem26.base, #t~mem26.offset;
+    assume true;
+    assume true;
+    call #t~mem27.base, #t~mem27.offset := read~$Pointer$(~shape.base, ~shape.offset + 0, 8);
+    call #t~mem28.base, #t~mem28.offset := read~$Pointer$(#t~mem27.base, #t~mem27.offset + 0, 8);
+    assume !(#t~mem28.base == 0 && #t~mem28.offset == 0);
+    havoc #t~mem27.base, #t~mem27.offset;
+    havoc #t~mem28.base, #t~mem28.offset;
+    call fail();
+    return;
+}
+
+procedure inspect_before(#in~shape.base : int, #in~shape.offset : int) returns ();
+modifies ;
+
+implementation ULTIMATE.start() returns (){
+    var #t~ret52 : int;
+
+  loc4:
+    call ULTIMATE.init();
+    call #t~ret52 := main();
+    return;
+}
+
+procedure ULTIMATE.start() returns ();
+modifies #valid, #NULL.base, #NULL.offset, #memory_$Pointer$.base, #memory_$Pointer$.offset, #memory_int;
+modifies #valid, #length, #memory_$Pointer$.base, #memory_$Pointer$.offset, #memory_int;
+
+implementation main() returns (#res : int){
+    var #t~malloc41.base : int, #t~malloc41.offset : int;
+    var #t~nondet43 : int;
+    var #t~malloc45.base : int, #t~malloc45.offset : int;
+    var ~node~31.base : int, ~node~31.offset : int;
+    var ~item~31.base : int, ~item~31.offset : int;
+    var #t~nondet40 : int;
+    var #t~ret48.base : int, #t~ret48.offset : int;
+    var #t~mem49.base : int, #t~mem49.offset : int;
+    var #t~mem50.base : int, #t~mem50.offset : int;
+    var #t~mem51.base : int, #t~mem51.offset : int;
+    var ~snext~32.base : int, ~snext~32.offset : int;
+    var ~data~30.base : int, ~data~30.offset : int;
+    var ~node~30.base : int, ~node~30.offset : int;
+
+  loc5:
+    ~data~30.base, ~data~30.offset := 0, 0;
+    goto loc6;
+  loc6:
+    assume true;
+    assume -2147483648 <= #t~nondet40 && #t~nondet40 <= 2147483647;
+    goto loc7;
+  loc7:
+    goto loc7_0, loc7_1;
+  loc7_0:
+    assume !(#t~nondet40 != 0);
+    havoc #t~nondet40;
+    assume !(~data~30.base == 0 && ~data~30.offset == 0);
+    call inspect_before(~data~30.base, ~data~30.offset);
+    return;
+  loc7_1:
+    assume !!(#t~nondet40 != 0);
+    havoc #t~nondet40;
+    call #t~malloc41.base, #t~malloc41.offset := #Ultimate.alloc(12);
+    ~node~31.base, ~node~31.offset := #t~malloc41.base, #t~malloc41.offset;
+    assume !(~node~31.base == 0 && ~node~31.offset == 0);
+    call write~$Pointer$(0, 0, ~node~31.base, ~node~31.offset + 0, 8);
+    assume -2147483648 <= #t~nondet43 && #t~nondet43 <= 2147483647;
+    call write~int(#t~nondet43, ~node~31.base, ~node~31.offset + 8, 4);
+    havoc #t~nondet43;
+    call #t~malloc45.base, #t~malloc45.offset := #Ultimate.alloc(16);
+    ~item~31.base, ~item~31.offset := #t~malloc45.base, #t~malloc45.offset;
+    assume !(~item~31.base == 0 && ~item~31.offset == 0);
+    call write~$Pointer$(~node~31.base, ~node~31.offset, ~item~31.base, ~item~31.offset + 0, 8);
+    call write~$Pointer$(~data~30.base, ~data~30.offset, ~item~31.base, ~item~31.offset + 8, 8);
+    ~data~30.base, ~data~30.offset := ~item~31.base, ~item~31.offset;
+    goto loc6;
+}
+
+procedure main() returns (#res : int);
+modifies #memory_$Pointer$.base, #memory_$Pointer$.offset, #memory_int, #valid, #length;
+
+procedure read~$Pointer$(#ptr.base : int, #ptr.offset : int, #sizeOfReadType : int) returns (#value.base : int, #value.offset : int);
+ensures #value.base == #memory_$Pointer$.base[#ptr.base,#ptr.offset] && #value.offset == #memory_$Pointer$.offset[#ptr.base,#ptr.offset];
+
+procedure malloc(#in~__size : int) returns (#res.base : int, #res.offset : int);
+modifies ;
+
+procedure write~$Pointer$(#value.base : int, #value.offset : int, #ptr.base : int, #ptr.offset : int, #sizeOfWrittenType : int) returns ();
+modifies #memory_int, #memory_$Pointer$.base, #memory_$Pointer$.offset;
+ensures (true && #memory_int == old(#memory_int)[#ptr.base,#ptr.offset := #memory_int[#ptr.base,#ptr.offset]]) && #memory_$Pointer$.base == old(#memory_$Pointer$.base)[#ptr.base,#ptr.offset := #value.base] && #memory_$Pointer$.offset == old(#memory_$Pointer$.offset)[#ptr.base,#ptr.offset := #value.offset];
+
+procedure write~int(#value : int, #ptr.base : int, #ptr.offset : int, #sizeOfWrittenType : int) returns ();
+modifies #memory_int, #memory_$Pointer$.base, #memory_$Pointer$.offset;
+ensures (true && #memory_int == old(#memory_int)[#ptr.base,#ptr.offset := #value]) && #memory_$Pointer$.base == old(#memory_$Pointer$.base)[#ptr.base,#ptr.offset := #memory_$Pointer$.base[#ptr.base,#ptr.offset]] && #memory_$Pointer$.offset == old(#memory_$Pointer$.offset)[#ptr.base,#ptr.offset := #memory_$Pointer$.offset[#ptr.base,#ptr.offset]];
+
+procedure #Ultimate.alloc(~size : int) returns (#res.base : int, #res.offset : int);
+ensures old(#valid)[#res.base] == 0;
+ensures #valid == old(#valid)[#res.base := 1];
+ensures #res.offset == 0;
+ensures #res.base != 0;
+ensures #length == old(#length)[#res.base := ~size];
+modifies #valid, #length;
+
+procedure abort() returns ();
+modifies ;
+
+procedure __VERIFIER_nondet_int() returns (#res : int);
+modifies ;
+
+procedure ULTIMATE.free(~addr.base : int, ~addr.offset : int) returns ();
+free requires ~addr.offset == 0;
+free requires ~addr.base == 0 || #valid[~addr.base] == 1;
+free ensures (if ~addr.base == 0 then #valid == old(#valid) else #valid == old(#valid)[~addr.base := 0]);
+modifies #valid;
+
+procedure __VERIFIER_error() returns ();
+modifies ;
+
+procedure read~int(#ptr.base : int, #ptr.offset : int, #sizeOfReadType : int) returns (#value : int);
+ensures #value == #memory_int[#ptr.base,#ptr.offset];
+
+procedure free(#in~__ptr.base : int, #in~__ptr.offset : int) returns ();
+modifies ;
+
+procedure ULTIMATE.dealloc(~addr.base : int, ~addr.offset : int) returns ();
+free ensures #valid == old(#valid)[~addr.base := 0];
+modifies #valid;
+
