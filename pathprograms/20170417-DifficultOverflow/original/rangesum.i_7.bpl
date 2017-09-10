@@ -1,3 +1,4 @@
+//#Unsafe
 var ~N : int;
 
 var #NULL.base : int, #NULL.offset : int;
