@@ -1,3 +1,4 @@
+//#Safe
 const #funAddr~allocator.base : int;
 const #funAddr~allocator.offset : int;
 const #funAddr~de_allocator.base : int;

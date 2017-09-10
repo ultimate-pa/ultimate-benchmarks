@@ -1,3 +1,4 @@
+//#Safe
 var ~clk : int;
 
 var ~timer : int;

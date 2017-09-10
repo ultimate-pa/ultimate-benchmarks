@@ -1,3 +1,4 @@
+//#Safe
 implementation multiple_of(#in~n : int, #in~m : int) returns (#res : int){
     var #t~ret2 : int;
     var #t~ret3 : int;

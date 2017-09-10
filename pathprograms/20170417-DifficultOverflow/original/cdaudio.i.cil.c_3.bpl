@@ -1,3 +1,4 @@
+//#Safe
 type STRUCT~_ETHREAD;
 type STRUCT~_EPROCESS;
 type STRUCT~_IO_TIMER;

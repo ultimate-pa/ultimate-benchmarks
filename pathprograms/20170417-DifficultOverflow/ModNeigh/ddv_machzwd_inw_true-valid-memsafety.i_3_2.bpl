@@ -1,3 +1,4 @@
+//#Safe
 var ~#kernel_lock.offset : int;
 
 var #memory_$Pointer$.base : [int][int]int;

@@ -1,3 +1,4 @@
+//#Safe
 var ~rsp_t_type : int;
 
 var ~c_empty_req : int;

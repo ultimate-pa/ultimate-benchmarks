@@ -1,3 +1,4 @@
+//#Safe
 var ~#zf_timer.offset : int;
 
 var v_rep#funAddr~zf_notify_sys.base_1 : int;

@@ -1,3 +1,4 @@
+//#Safe
 var ~__CS_round : int;
 
 var ~__CS_thread.offset : [int]int;

@@ -1,3 +1,4 @@
+//#Safe
 type STRUCT~page;
 type STRUCT~poll_table_struct;
 type STRUCT~vm_area_struct;

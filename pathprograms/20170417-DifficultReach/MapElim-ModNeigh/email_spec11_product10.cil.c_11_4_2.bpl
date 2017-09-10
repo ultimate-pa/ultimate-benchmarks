@@ -1,3 +1,4 @@
+//#Safe
 var ~queued_message : int;
 
 var v_rep_select_#valid_0__1 : int;

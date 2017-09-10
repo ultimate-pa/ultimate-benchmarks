@@ -1,3 +1,4 @@
+//#Safe
 var ~s_memory1 : int;
 
 var ~rsp_t_type : int;

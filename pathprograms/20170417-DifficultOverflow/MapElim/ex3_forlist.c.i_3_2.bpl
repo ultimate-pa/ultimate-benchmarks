@@ -1,3 +1,4 @@
+//#Safe
 var ~counter : int;
 
 var v_rep_select_~pstate_1__1 : int;

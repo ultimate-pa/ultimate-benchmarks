@@ -1,3 +1,4 @@
+//#Safe
 var ~ldv_mutex : int;
 
 var ~open_called : int;

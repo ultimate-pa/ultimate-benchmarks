@@ -1,3 +1,4 @@
+//#Safe
 var ~c_dr_i : int;
 
 var ~p_dw_st : int;

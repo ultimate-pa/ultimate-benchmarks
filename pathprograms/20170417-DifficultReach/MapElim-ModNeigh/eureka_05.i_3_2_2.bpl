@@ -1,3 +1,4 @@
+//#Safe
 var v_rep_select_~array_1__1 : int;
 
 var ~n : int;

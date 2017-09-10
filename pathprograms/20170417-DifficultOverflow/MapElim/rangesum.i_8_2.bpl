@@ -1,3 +1,4 @@
+//#Safe
 var ~N : int;
 
 var #NULL.offset : int;

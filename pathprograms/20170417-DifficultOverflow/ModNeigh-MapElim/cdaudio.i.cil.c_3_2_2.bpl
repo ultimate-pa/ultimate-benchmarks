@@ -1,3 +1,4 @@
+//#Safe
 var ~compFptr.offset : int;
 
 var ~pirp.base : int;
