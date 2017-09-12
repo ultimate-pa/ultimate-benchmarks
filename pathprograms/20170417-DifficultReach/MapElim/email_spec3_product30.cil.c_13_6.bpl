@@ -1,3 +1,4 @@
+//#Safe
 var ~__ste_Client_Keyring2_User0 : int;
 
 var ~__ste_email_isSignatureVerified0 : int;

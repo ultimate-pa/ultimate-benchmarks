@@ -1,3 +1,4 @@
+//#Safe
 var ~b0_val : int;
 
 var ~b0_val_t : int;

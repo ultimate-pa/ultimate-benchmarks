@@ -1,3 +1,4 @@
+//#Safe
 var ~N : int;
 
 implementation ULTIMATE.init() returns (){

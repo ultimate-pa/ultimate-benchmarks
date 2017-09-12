@@ -1,3 +1,4 @@
+//#Safe
 var ~__ste_email_id0 : int;
 
 var ~__ste_email_id1 : int;

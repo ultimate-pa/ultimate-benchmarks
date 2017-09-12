@@ -1,3 +1,4 @@
+//#Safe
 var ~a17 : int;
 
 var ~a7 : int;

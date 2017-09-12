@@ -1,3 +1,4 @@
+//#Safe
 var ~m_pc : int;
 
 var ~t1_pc : int;

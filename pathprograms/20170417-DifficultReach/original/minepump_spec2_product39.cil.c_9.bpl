@@ -1,3 +1,4 @@
+//#Safe
 var ~waterLevel : int;
 
 var ~methaneLevelCritical : int;

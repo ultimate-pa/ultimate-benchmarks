@@ -1,3 +1,4 @@
+//#Safe
 var ~g : int;
 
 implementation A(#in~a1 : int, #in~a2 : int) returns (#res : int){

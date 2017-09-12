@@ -1,3 +1,4 @@
+//#Safe
 var ~methAndRunningLastTime : int;
 
 var ~waterLevel : int;

@@ -1,3 +1,4 @@
+//#Safe
 var ~m_run_st : int;
 
 var ~m_run_i : int;

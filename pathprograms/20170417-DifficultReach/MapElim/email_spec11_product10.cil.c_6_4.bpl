@@ -1,3 +1,4 @@
+//#Safe
 var ~queued_message : int;
 
 var ~__ste_client_autoResponse0 : int;

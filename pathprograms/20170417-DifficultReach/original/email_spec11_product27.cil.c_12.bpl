@@ -1,3 +1,4 @@
+//#Safe
 var ~__ste_ClientAddressBook_size0 : int;
 
 var ~__ste_ClientAddressBook_size1 : int;

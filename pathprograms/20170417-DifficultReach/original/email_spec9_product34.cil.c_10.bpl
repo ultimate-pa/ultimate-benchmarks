@@ -1,3 +1,4 @@
+//#Safe
 var ~in_encrypted : int;
 
 var ~__ste_email_id0 : int;

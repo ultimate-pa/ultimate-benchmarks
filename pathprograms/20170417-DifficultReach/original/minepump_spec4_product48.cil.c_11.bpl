@@ -1,3 +1,4 @@
+//#Safe
 var ~cleanupTimeShifts : int;
 
 var ~pumpRunning : int;

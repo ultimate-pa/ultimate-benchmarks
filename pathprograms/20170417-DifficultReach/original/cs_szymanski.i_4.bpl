@@ -1,3 +1,4 @@
+//#Safe
 const #funAddr~thr1.base : int;
 const #funAddr~thr1.offset : int;
 const #funAddr~thr2.base : int;

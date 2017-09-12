@@ -1,3 +1,4 @@
+//#Safe
 implementation fibonacci(#in~n : int) returns (#res : int){
     var #t~ret0 : int;
     var #t~ret1 : int;

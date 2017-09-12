@@ -1,3 +1,4 @@
+//#Safe
 var ~pirp.base : int;
 
 var #memory_$Pointer$.base : [int][int]int;

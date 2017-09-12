@@ -1,3 +1,4 @@
+//#Safe
 var ~cleanupTimeShifts : int;
 
 var ~calls_0 : int;

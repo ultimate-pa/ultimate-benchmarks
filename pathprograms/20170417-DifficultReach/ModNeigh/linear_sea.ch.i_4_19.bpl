@@ -1,3 +1,4 @@
+//#Safe
 var ~SIZE : int;
 
 var #valid : [int]int;

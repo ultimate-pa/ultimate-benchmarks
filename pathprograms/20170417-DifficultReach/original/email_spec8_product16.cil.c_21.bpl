@@ -1,3 +1,4 @@
+//#Safe
 var ~__ste_client_privateKey0 : int;
 
 var ~__ste_client_privateKey1 : int;

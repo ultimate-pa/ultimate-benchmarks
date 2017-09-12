@@ -1,3 +1,4 @@
+//#Safe
 var ~calls_0 : int;
 
 var ~calls_1 : int;

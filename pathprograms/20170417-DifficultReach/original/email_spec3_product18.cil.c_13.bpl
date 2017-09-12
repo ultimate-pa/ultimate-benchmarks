@@ -1,3 +1,4 @@
+//#Safe
 var ~__ste_client_autoResponse0 : int;
 
 var ~__ste_client_autoResponse1 : int;

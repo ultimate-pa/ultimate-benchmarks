@@ -1,3 +1,4 @@
+//#Safe
 var ~guard_malloc_counter.base : int, ~guard_malloc_counter.offset : int;
 
 var ~elem.base : int, ~elem.offset : int;

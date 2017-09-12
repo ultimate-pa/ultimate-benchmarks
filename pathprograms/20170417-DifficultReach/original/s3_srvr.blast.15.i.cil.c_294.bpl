@@ -1,3 +1,4 @@
+//#Safe
 type STRUCT~AUTHORITY_KEYID_st;
 type ~__time_t = int;
 type ~ASN1_BOOLEAN = int;

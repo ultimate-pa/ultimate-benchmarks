@@ -1,3 +1,4 @@
+//#Safe
 var ~__SELECTED_FEATURE_Base : int;
 
 var ~__SELECTED_FEATURE_Keys : int;

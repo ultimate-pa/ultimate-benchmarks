@@ -1,3 +1,4 @@
+//#Safe
 var ~weight : int;
 
 var ~maximumWeight : int;

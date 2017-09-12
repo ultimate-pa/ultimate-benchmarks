@@ -1,3 +1,4 @@
+//#Safe
 var ~counter : int;
 
 var ~pp.offset : [int]int;

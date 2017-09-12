@@ -1,3 +1,4 @@
+//#Safe
 var ~q_buf_0 : int;
 
 var ~q_free : int;
