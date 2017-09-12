@@ -1,3 +1,4 @@
+//#Unsafe
 var ~cleanupTimeShifts : int;
 
 var ~systemActive : int;

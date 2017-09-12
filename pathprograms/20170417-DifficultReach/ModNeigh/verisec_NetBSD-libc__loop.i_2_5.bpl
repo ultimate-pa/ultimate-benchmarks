@@ -1,3 +1,4 @@
+//#Unsafe
 var #valid : [int]int;
 
 var ~tmp.base : int;
