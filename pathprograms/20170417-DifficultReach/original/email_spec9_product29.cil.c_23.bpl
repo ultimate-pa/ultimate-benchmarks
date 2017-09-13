@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var ~in_encrypted : int;
 
 var ~queue_empty : int;

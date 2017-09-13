@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var ~pp.base : [int]int, ~pp.offset : [int]int;
 
 var ~pstate : [int]int;

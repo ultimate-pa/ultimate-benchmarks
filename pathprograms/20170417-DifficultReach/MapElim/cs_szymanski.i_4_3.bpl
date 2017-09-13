@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var v_rep_select_~__CS_thread_allocated_0__1 : int;
 
 var v_rep_select__select_~__CS_thread_lockedon.base_2__0__1 : int;

@@ -1,4 +1,4 @@
-//#Unsafe
+//#Unsafe #Terminating
 var v_rep_select_#valid_0__1 : int;
 
 var ~tmp.base : int;

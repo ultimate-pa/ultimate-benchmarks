@@ -1,3 +1,4 @@
+//#Terminating
 function { :overapproximation "shiftLeft" } ~shiftLeft(in0 : int, in1 : int) returns (out : int);
 implementation ULTIMATE.init() returns (){
   loc0:

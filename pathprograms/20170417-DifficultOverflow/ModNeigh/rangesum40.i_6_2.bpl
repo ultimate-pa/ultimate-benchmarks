@@ -1,4 +1,4 @@
-//#Unsafe
+//#Unsafe #Terminating
 var #valid : [int]int;
 
 var #memory_int : [int][int]int;

@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var ~currentHeading : int;
 
 var ~currentFloorID : int;

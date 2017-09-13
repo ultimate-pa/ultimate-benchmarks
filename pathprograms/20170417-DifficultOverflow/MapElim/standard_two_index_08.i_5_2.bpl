@@ -1,3 +1,4 @@
+//#Terminating
 procedure ULTIMATE.start() returns ()
 modifies ;
 {

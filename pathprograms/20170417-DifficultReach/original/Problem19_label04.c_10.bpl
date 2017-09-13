@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var ~a27 : int;
 
 var ~a9 : int;

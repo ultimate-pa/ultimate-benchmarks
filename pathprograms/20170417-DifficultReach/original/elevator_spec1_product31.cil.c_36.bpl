@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var ~weight : int;
 
 var ~maximumWeight : int;

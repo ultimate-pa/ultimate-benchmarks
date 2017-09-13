@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 const #funAddr~thread1.base : int;
 const #funAddr~thread1.offset : int;
 const #funAddr~thread2.base : int;

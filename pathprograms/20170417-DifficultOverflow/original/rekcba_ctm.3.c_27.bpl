@@ -1,3 +1,4 @@
+//#Terminating
 var ~__startrek_Assert_t3_i0 : [int]int;
 
 var ~__startrek_Assert_t2_i0 : [int]int;

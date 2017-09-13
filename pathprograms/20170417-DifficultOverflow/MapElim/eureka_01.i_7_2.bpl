@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var ~INFINITY : int;
 
 procedure ULTIMATE.start() returns ()

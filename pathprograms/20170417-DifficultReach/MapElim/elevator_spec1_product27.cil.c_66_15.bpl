@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var ~landingButtons_spc1_1 : int;
 
 var ~calls_2 : int;

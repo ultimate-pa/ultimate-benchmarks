@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var ~array : [int]int;
 
 var ~n : int;

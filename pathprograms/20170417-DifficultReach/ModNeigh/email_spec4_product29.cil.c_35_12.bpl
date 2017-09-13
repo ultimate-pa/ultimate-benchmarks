@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var ~__ste_Client_AddressBook2_Alias2 : int;
 
 var ~queued_message : int;

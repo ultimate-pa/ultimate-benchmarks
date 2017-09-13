@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var ~last : int;
 
 implementation nondet() returns (#res : int){

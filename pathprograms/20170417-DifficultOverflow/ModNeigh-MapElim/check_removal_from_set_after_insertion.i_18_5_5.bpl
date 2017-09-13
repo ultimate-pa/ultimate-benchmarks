@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var ~SIZE : int;
 
 var #NULL.offset : int;

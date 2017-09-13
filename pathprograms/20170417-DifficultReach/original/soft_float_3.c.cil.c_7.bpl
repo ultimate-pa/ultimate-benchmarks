@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 function { :overapproximation "shiftLeft" } ~shiftLeft(in0 : int, in1 : int) returns (out : int);
 function { :overapproximation "shiftRight" } ~shiftRight(in0 : int, in1 : int) returns (out : int);
 function { :overapproximation "bitwiseComplement" } ~bitwiseComplement(in0 : int) returns (out : int);

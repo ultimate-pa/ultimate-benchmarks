@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var ~__ste_email_from0 : int;
 
 var ~__ste_email_from1 : int;

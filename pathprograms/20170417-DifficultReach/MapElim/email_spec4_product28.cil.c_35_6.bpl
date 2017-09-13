@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var ~__ste_Client_Keyring2_User0 : int;
 
 var ~queued_message : int;

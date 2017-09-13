@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var ~timer : int;
 
 var ~P_1_st : int;

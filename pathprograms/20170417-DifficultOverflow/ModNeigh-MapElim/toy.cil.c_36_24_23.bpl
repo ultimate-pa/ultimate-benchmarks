@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var ~c2_st : int;
 
 var ~wl_pc : int;

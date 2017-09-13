@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var ~max_loop : int;
 
 var ~clk : int;

@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var ~tmp.base : int;
 
 var ~tmp.offset : int;

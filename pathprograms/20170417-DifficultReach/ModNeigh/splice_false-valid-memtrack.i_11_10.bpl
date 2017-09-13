@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var #memory_$Pointer$.base : [int][int]int;
 
 var #valid : [int]int;

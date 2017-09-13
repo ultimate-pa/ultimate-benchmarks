@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var ~cleanupTimeShifts : int;
 
 var ~waterLevel : int;

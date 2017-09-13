@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var v_rep_select_~pp.base_1__1 : int;
 
 var ~counter : int;

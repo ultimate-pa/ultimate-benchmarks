@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var ~mail_is_sensitive : int;
 
 var ~bob : int;

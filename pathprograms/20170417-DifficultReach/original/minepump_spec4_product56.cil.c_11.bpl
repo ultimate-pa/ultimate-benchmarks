@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var ~pumpRunning : int;
 
 var ~systemActive : int;

@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var ~fast_clk_edge : int;
 
 var ~slow_clk_edge : int;

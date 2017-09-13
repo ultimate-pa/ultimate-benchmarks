@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var ~calls_0 : int;
 
 var ~calls_1 : int;

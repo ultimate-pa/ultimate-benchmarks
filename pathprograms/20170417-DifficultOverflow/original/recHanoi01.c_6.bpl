@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var ~counter : int;
 
 implementation ULTIMATE.init() returns (){

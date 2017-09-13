@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 type ~Char = int;
 var ~tmp.base : int, ~tmp.offset : int;
 

@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var #valid : [int]int;
 
 var ~tmp.base : int;

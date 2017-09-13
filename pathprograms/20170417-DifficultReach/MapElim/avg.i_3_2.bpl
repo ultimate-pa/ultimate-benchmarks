@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var ~N : int;
 
 var #NULL.offset : int;

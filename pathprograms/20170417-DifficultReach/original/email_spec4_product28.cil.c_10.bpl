@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var ~queue_empty : int;
 
 var ~queued_message : int;

@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var ~pirp.base : int;
 
 var ~pirp.offset : int;

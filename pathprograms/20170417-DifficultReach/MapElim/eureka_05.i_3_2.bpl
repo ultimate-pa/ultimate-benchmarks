@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var v_rep_select_~array_3__1 : int;
 
 var ~n : int;

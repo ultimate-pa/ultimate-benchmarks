@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var #NULL.offset : int;
 
 var v_rep_select_#valid_0__1 : int;

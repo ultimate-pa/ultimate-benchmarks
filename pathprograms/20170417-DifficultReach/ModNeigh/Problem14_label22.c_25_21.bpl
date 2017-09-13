@@ -1,3 +1,4 @@
+//#Terminating
 var ~a24 : int;
 
 var ~a12 : int;

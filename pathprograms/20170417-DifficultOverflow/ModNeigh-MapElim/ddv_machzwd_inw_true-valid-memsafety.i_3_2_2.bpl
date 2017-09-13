@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Terminating
 var v_rep_select_~registered_irq.dev_id.offset_10__1 : int;
 
 var v_rep_select_~registered_irq.handler.offset_9__1 : int;
