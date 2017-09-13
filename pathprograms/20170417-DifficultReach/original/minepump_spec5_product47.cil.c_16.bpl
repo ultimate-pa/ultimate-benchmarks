@@ -1,3 +1,4 @@
+//#Nonterminating
 var ~pumpRunning : int;
 
 var ~systemActive : int;

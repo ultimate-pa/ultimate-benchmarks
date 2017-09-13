@@ -1,3 +1,4 @@
+//#Nonterminating
 implementation ULTIMATE.init() returns (){
   loc0:
     assume true;

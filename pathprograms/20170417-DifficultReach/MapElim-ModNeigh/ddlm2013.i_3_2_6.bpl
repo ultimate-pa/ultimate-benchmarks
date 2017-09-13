@@ -1,3 +1,4 @@
+//#Nonterminating
 procedure ULTIMATE.start() returns ()
 modifies ;
 {

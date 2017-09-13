@@ -1,4 +1,4 @@
-//#Unsafe
+//#Unsafe #Nonterminating
 var ~cleanupTimeShifts : int;
 
 var ~systemActive : int;

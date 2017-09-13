@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Nonterminating
 procedure ULTIMATE.start() returns ()
 modifies ;
 {

@@ -1,4 +1,4 @@
-//#Safe
+//#Safe #Nonterminating
 var ~max_loop : int;
 
 var ~num : int;
